@@ -15,6 +15,8 @@ convert($а) ->
   $a;
 convert($е) ->
   $e;
+convert($ё) ->
+  $e;
 convert($и) ->
   $i;
 convert($н) ->
@@ -40,7 +42,7 @@ convert($у) ->
 convert($д) ->
   $d;
 convert($я) ->
-  <<$y, $a>>;
+  <<$i, $a>>;
 convert($ы) ->
   $y;
 convert($ь) ->
@@ -52,11 +54,11 @@ convert($б) ->
 convert($г) ->
   $g;
 convert($й) ->
-  $y;
+  $i;
 convert($ч) ->
   <<$c,$h>>;
 convert($ю) ->
-  <<$y,$u>>;
+  <<$i,$u>>;
 convert($х) ->
   <<$k,$h>>;
 convert($ж) ->
@@ -72,7 +74,69 @@ convert($ф) ->
 convert($э) ->
   $e;
 convert($ъ) ->
-  <<>>;
+  <<$i,$e>>;
+
+convert($О) ->
+  $O;
+convert($А) ->
+  $A;
+convert($Е) ->
+  $E;
+convert($Ё) ->
+  $E;
+convert($И) ->
+  $I;
+convert($Н) ->
+  $N;
+convert($Т) ->
+  $T;
+convert($Р) ->
+  $R;
+convert($С) ->
+  $S;
+convert($Л) ->
+  $L;
+convert($В) ->
+  $V;
+convert($К) ->
+  $K;
+convert($П) ->
+  $P;
+convert($М) ->
+  $M;
+convert($У) ->
+  $U;
+convert($Д) ->
+  $D;
+convert($Я) ->
+  <<$I, $A>>;
+convert($З) ->
+  $Z;
+convert($Б) ->
+  $B;
+convert($Г) ->
+  $G;
+convert($Й) ->
+  $I;
+convert($Ч) ->
+  <<$C,$H>>;
+convert($Ю) ->
+  <<$I,$U>>;
+convert($Х) ->
+  <<$K,$H>>;
+convert($Ж) ->
+  <<$Z,$H>>;
+convert($Ш) ->
+  <<$S,$H>>;
+convert($Ц) ->
+  <<$T,$S>>;
+convert($Щ) ->
+  <<$S,$H,$C,$H>>;
+convert($Ф) ->
+  $F;
+convert($Э) ->
+  $E;
+
 convert(AsIs) when AsIs < 128 ->
   AsIs;
 convert(_) ->

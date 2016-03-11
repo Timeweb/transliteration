@@ -1,6 +1,9 @@
 REBAR = ./rebar3
 
-compile:
+clean:
+	$(REBAR) clean
+
+compile: clean
 	$(REBAR) compile
 
 eunits: compile
