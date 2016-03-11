@@ -109,7 +109,7 @@ convert($У) ->
 convert($Д) ->
   $D;
 convert($Я) ->
-  <<$I, $A>>;
+  <<$I, $a>>;
 convert($З) ->
   $Z;
 convert($Б) ->
@@ -119,19 +119,19 @@ convert($Г) ->
 convert($Й) ->
   $I;
 convert($Ч) ->
-  <<$C,$H>>;
+  <<$C,$h>>;
 convert($Ю) ->
-  <<$I,$U>>;
+  <<$I,$u>>;
 convert($Х) ->
-  <<$K,$H>>;
+  <<$K,$h>>;
 convert($Ж) ->
-  <<$Z,$H>>;
+  <<$Z,$h>>;
 convert($Ш) ->
-  <<$S,$H>>;
+  <<$S,$h>>;
 convert($Ц) ->
-  <<$T,$S>>;
+  <<$T,$s>>;
 convert($Щ) ->
-  <<$S,$H,$C,$H>>;
+  <<$S,$h,$c,$h>>;
 convert($Ф) ->
   $F;
 convert($Э) ->
